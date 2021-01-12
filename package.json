@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
+    "prepare":"npm run build",
     "prettier": "prettier --write \"./{src,examples}/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "prettier-check": "prettier -l \"./{src,examples}/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "build": "npm run build:types && npm run build:js",
